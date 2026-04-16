@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<title>Nifty Machines Limited</title>
+<meta name="description" content="Nifty Machines Limited in Ruiru, Kenya specializes in dairy equipment, kitchen fabrication, food processing systems, and water purification solutions.">
+<meta name="keywords" content="dairy equipment Kenya, stainless steel fabrication Ruiru, kitchen equipment Kenya, food processing machines Kenya">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Nifty Machines Limited">
+<meta property="og:description" content="Custom stainless steel equipment for farms & food businesses in Kenya">
+<meta property="og:type" content="website">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+
+body{background:#0b1220;color:#e5e7eb}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+align-items:center;
+background:#020617;
+}
+
+.logo{
+display:flex;
+flex-direction:column; /* THIS stacks logo + text */
+align-items:center;
+text-align:center;
+}
+
+.logo img{
+width:80px;
+height:80px;
+object-fit:contain;
+}
+
+.logotext{
+font: size 14px;
+color:#22c55e;
+margin-top:5px;
+}
+
+
+.btn{
+padding:12px 22px;
+background:#22c55e;
+border:none;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+color:#000;
+}
+
+/* HERO */
+.hero{
+padding:100px 10%;
+text-align:center;
+background:linear-gradient(to right,#020617,#0b1220);
+}
+
+.hero h2{font-size:42px;margin-bottom:20px}
+.hero p{color:#94a3b8;margin-bottom:30px;font-size:18px;max-width:700px;margin:auto}
+
+.mini-hero{
+background:#22c55e;
+color:#000;
+text-align:center;
+padding:10px;
+font-weight:500;
+font-size:14px;
+}
+
+
+/* SECTIONS */
+.section{padding:80px 10%;text-align:center}
+
+.services,.gallery{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:40px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+width:280px;
+transition:.3s;
+}
+
+.card:hover{transform:translateY(-6px);background:#334155}
+
+.card h3{color:#22c55e;margin-bottom:10px}
+
+/* GALLERY */
+.gallery img{
+width:280px;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+}
+
+/* MAP */
+.map iframe{
+width:100%;
+height:400px;
+border:none;
+border-radius:12px;
+margin-top:20px;
+}
+
+/* FORM */
+.cta{
+background:#020617;
+padding:60px 10%;
+text-align:center;
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:6px;
+border:none;
+}
+
+/* FOOTER * /*<div class="logo">
+<img src="/logo.png" alt="logo"> */
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+color:#64748b;
+margin-top:50px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1 class="logotext">Nifty</h1>
+</div>
+
+<section class="mini-hero">
+  <div class="mini-hero-overlay">
+    <p>Reliable High-Quality Stainless Steel Fabrication</p>
+  </div>
+</section>
+
+
+
+<a href="https://wa.me/254725866476">
+<button class="btn">WhatsApp</button>
+</a>
+</header>
+
+<section class="hero">
+<h2>Industrial Stainless Steel Equipment Built for Kenyan Businesses</h2>
+<p>
+Custom dairy, kitchen, and food processing equipment designed and fabricated in Ruiru. Built for durability, efficiency, and affordability.
+</p>
+<a href="https://wa.me/254725866476">
+<button class="btn">Get Quote</button>
+</a>
+</section>
+
+<section class="section">
+<h2>Our Services</h2>
+<div class="services">
+
+<div class="card">
+<h3>Dairy Equipment</h3>
+<p>Milk tanks, coolers, and processing systems.</p>
+</div>
+
+<div class="card">
+<h3>Kitchen Equipment</h3>
+<p>Commercial stainless steel kitchens & fittings.</p>
+</div>
+
+<div class="card">
+<h3>Food Processing</h3>
+<p>Machinery tailored for local production.</p>
+</div>
+
+<div class="card">
+<h3>Water Systems</h3>
+<p>Purification and filtration solutions.</p>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECT GALLERY -->
+<section class="section">
+<h2>Recent Projects</h2>
+<div class="gallery">
+
+<img src="images/cisterns.jpg" alt="Dairy Equipment">
+<img src="images/kitchen.jpg" alt="Kitchen Equipment">
+<img src="images/rails.png" alt="Food Processing Machine">
+
+</div>
+</section>
+
+<!-- GOOGLE MAP -->
+<section class="section map">
+<h2>Visit Us in Ruiru</h2>
+
+<iframe src="https://www.google.com/maps?q=Ruiru+Kenya&output=embed"></iframe>
+
+</section>
+
+<!-- CONTACT -->
+<section class="cta">
+<h2>Request a Quote</h2>
+
+<form id="quoteForm">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="text" id="phone" placeholder="Phone Number" required>
+<textarea id="project" placeholder="Project Details"></textarea>
+<button class="btn">Send Request</button>
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 Nifty Machines Limited | Ruiru, Kenya</p>
+</footer>
+
+<script>
+// ADMIN-READY STRUCTURE
+document.getElementById("quoteForm").addEventListener("submit", function(e){
+e.preventDefault();
+
+let data = {
+name: document.getElementById("name").value,
+phone: document.getElementById("phone").value,
+project: document.getElementById("project").value,
+date: new Date().toISOString()
+};
+
+// Save locally (temporary admin simulation)
+let leads = JSON.parse(localStorage.getItem("leads") || "[]");
+leads.push(data);
+localStorage.setItem("leads", JSON.stringify(leads));
+
+// WhatsApp redirect
+let msg = `Hello Nifty Machines,%0AName: ${data.name}%0APhone: ${data.phone}%0AProject: ${data.project}`;
+window.open(`https://wa.me/254725866476?text=${msg}`,'_blank');
+
+alert("Request sent successfully!");
+});
+</script>
+
+</body>
+</html>
